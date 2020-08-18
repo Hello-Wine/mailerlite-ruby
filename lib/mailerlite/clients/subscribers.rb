@@ -72,7 +72,7 @@ module MailerLite
       # @return [Array] Response from API.
       def search_subscribers(query, options = {})
         options[:query] = query
-        connection.get('subscribers/search', options)
+        connection.get('subscribers', options)
       end
 
       # Get groups subscriber belongs to
